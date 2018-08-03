@@ -1,3 +1,5 @@
+require 'pry'
+
 def my_collect(collection)
   # code here
   i = 0
@@ -7,6 +9,7 @@ def my_collect(collection)
   
     answer << yield(collection[i])
     i = i + 1
+    binding.pry
   end
 answer
 end
